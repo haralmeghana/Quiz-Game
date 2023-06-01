@@ -1,0 +1,141 @@
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+body{
+    background-color: #3390ec;  
+}
+.Start, 
+.instruction, 
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2),
+                0 10px 10px 0 rgba(0,0,0,0.19);
+}
+.instruction.activeInfo{
+    padding-left: 40px;
+    margin-top: 20px;
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%)scale(1);
+}
+.Start button{
+    padding: 15px 30px;
+    font-size: 25px; 
+    border-radius: 5px; 
+    background-color: #71cccf;
+    color: black; 
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.instruction{
+    width: 540px;
+    background-color: white;
+    border-radius: 5px;
+    transform: translate(-50%-50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.instruction h2{
+    height: 70px;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 400px;
+}
+.instruction .In ol  {
+   margin-top: 20px;
+}
+.instruction .button{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+.instruction .button button{
+    padding: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #0e5398;
+    transition: all 0.3 ease;
+    margin: 10px 5px;
+}
+.button button {
+    color: navy;
+    background-color: #71cccf;
+}
+.button button:hover{
+    color: black;
+    background-color: #d3d6db;
+    font-size: 17px;
+}
+.container{
+    width: 550px;
+    background-color: white;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.container header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    font-size: 20px;
+    height: 60px;
+    padding: 30px 30px;   
+}
+.container.activeQuiz{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%)scale(1);
+}
+#choices {
+    list-style: none;
+    padding: 30px 40px 30px 40px;
+}
+.container #choices button {
+    background-color:#f2f2f2;
+    color: black;
+    border: 3px solid #435b81;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 98%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color  0.3s ;
+}  
+.container #choices button:hover {
+    background-color: #7ff2df;
+    font-size: 18px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2),
+                0 10px 10px 0 rgba(0,0,0,0.19);  
+}
+.container footer {
+    height: 55px;
+    width: 94%; 
+}
+
+
+
+
+
+
